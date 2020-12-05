@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+// theme font
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+$theme: #6539aa;
+$theme-light: #b29cd5;
+$theme-font: 'Mulish', sans-serif;
+
+body {
+    font-family: $theme-font !important;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.flag {
+    .dropdown-menu {
+        min-width: 0 !important;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .nav-link {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .list-group-item {
+        background: transparent;
+        border-radius: 0%;
+        border: 0;
+        border-right: 1px solid #fff;
+        padding: 0;
+    }
+    .list-group-item:last-child {
+        border-right: none;
+    }
+}
+
+.input-group-text {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.bg-theme {
+    background-color: $theme !important;
+}
+.bg-theme-light {
+    background-color: $theme-light !important;
+}
