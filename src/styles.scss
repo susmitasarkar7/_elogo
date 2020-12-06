@@ -17,7 +17,7 @@ $theme-font: 'Mulish', sans-serif;
 
 body {
     font-family: $theme-font !important;
-    background-color: #fff;
+    background-color: #eaeef4;
 }
 
 a {
@@ -59,4 +59,72 @@ a {
 }
 .bg-theme-light {
     background-color: $theme-light !important;
+}
+
+.bg-muted {
+    background-color: #bfbfbf !important;
+}
+
+.border-muted {
+    border-color: #696969 !important;
+}
+
+.fixed-top-margin {
+    margin-top: 115px !important;
+}
+.sticky-top {
+    top: 115px !important;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #464646;
+}
+.ngx-slider .ngx-slider-pointer {
+    cursor: pointer !important;
+    width: 23px !important;
+    height: 23px !important;
+    top: -10px !important;
+    background-color: #dd4445 !important;
+    z-index: 3 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 3px 4px #ababab;
+}
+.ngx-slider .ngx-slider-pointer:after {
+    content: '' !important;
+    width: 20px !important;
+    height: 20px !important;
+    position: absolute !important;
+    top: 1.5px !important;
+    left: 1.6px !important;
+    border-radius: 50% !important;
+    background: #fff !important;
+}
+.ngx-slider .ngx-slider-selection {
+    background-color: #dd4445 !important;
+}
+.collapsed, .show {
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-theme-outline {
+    border: 1px solid $theme;
+    color: $theme;
+}
+.social li:hover {
+    cursor: pointer;
+    background-color: #bfbfbf !important;
+    a {
+        fill: #000;
+    }
+}
+@media(max-width: 767px) {
+    .fixed-top-margin {
+        margin-top: 70px !important;
+    }
+    .sticky-top {
+        top: 70px !important;
+    }
 }
